@@ -26,6 +26,11 @@
     "playbook_file": "playbook.yml",
     "role_paths": [
             "roles/cis"
-      ]
+      ],
+    "extra_arguments": [
+      "-C",
+      "-t",
+      "section4,9"
+    ]
   }]
 }
