@@ -1,28 +1,19 @@
 {
- "variables": {
-    "aws_access_key": "",
-    "aws_secret_key": "",  
-    "aws-region": "",
-    "aws-vpc_id": "",
-    "aws-subnet_id": "",
-    "aws_session_token": ""
-  },
- "builders": [{
+"builders": [{
   "type": "amazon-ebs",
-  "ssh_pty": "true",
-  "access_key": "{{user `aws_access_key`}}",
-  "secret_key": "{{user `aws_secret_key`}}",
-  "token": "{{user `aws_session_token`}}",
-  "region": "{{user `aws-region`}}",
-  "source_ami": "ami-7d2eab1e",
+  "region": "ap-southeast-1",
+  "source_ami": "ami-cd49deae",
   "instance_type": "t2.micro",
-  "vpc_id": "{{user `aws-vpc_id`}}",
-  "subnet_id": "{{user `aws-subnet_id`}}",
+  "vpc_id": "",
+  "subnet_id": "",
   "ssh_username": "centos",
-  "ami_name": "node{{timestamp}}",
+  "ami_name": "packer-CIS {{timestamp}}",
   "tags": {
-  "Name": "nodejs",
-  "Application": "DevOps"
+  "Application": "DevOps",
+  "Description": "demo for packer",
+  "Donotstop": "true",
+  "Owner-Email": "siva.katam@blazeclan.com",
+  "ProjectCode": "demo code"
 }
 }],
 "provisioners": [{
