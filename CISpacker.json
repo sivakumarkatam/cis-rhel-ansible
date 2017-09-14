@@ -49,6 +49,17 @@
     "playbook_file": "playbook.yml",
     "role_paths": [
             "roles/cis"
+      ],
+    "extra_arguments": [
+      "-t",
+      "section4"
+    ]
+ },
+   {
+    "type": "ansible-local",
+    "playbook_file": "playbook.yml",
+    "role_paths": [
+            "roles/cis"
       ]
   }]
 }
