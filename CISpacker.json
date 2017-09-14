@@ -33,5 +33,12 @@
       "section4",
       "section9"
     ]
+ },
+   {
+    "type": "ansible-local",
+    "playbook_file": "playbook.yml",
+    "role_paths": [
+            "roles/cis"
+      ]
   }]
 }
