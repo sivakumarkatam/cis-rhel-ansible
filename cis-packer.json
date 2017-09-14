@@ -1,0 +1,29 @@
+{
+"builders": [{
+  "type": "amazon-ebs",
+  "region": "{{user `region`}}",
+  "source_ami": "ami-32148051",
+  "instance_type": "t2.micro",
+  "vpc_id": "{{user `vpc`}}",
+  "subnet_id": "",
+  "ssh_username": "centos",
+  "ami_name": "packer-CIS {{timestamp}}",
+  "tags": {
+  "Application": "DevOps",
+  "Description": "demo for packer",
+  "Donotstop": "true",
+  "Owner-Email": "siva.katam@blazeclan.com",
+  "ProjectCode": "demo code"
+}
+}],
+"provisioners": [{
+  "type": "shell",
+  "script": "script.sh",
+  "pause_before": "10s"
+},
+{
+  "type": "ansible-local",
+  "playbook_file": "playbook.yml"
+}
+]
+}
