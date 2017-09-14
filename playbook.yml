@@ -16,7 +16,7 @@
 #
 
 - hosts: all
-  accelerate: true
+  accelerate: false
   become: yes
   become_method: sudo
   user: root
