@@ -30,7 +30,8 @@
     "extra_arguments": [
       "-C",
       "-t",
-      "section4,9"
+      "section4",
+      "section9"
     ]
   }]
 }
