@@ -10,7 +10,7 @@
   "ami_name": "packer-CIS {{timestamp}}",
   "tags": {
   "Application": "DevOps",
-  "Description": "demo for packer",
+  "Description": "demo for CIS-ansible",
   "Donotstop": "true",
   "Owner-Email": "siva.katam@blazeclan.com",
   "ProjectCode": "demo code"
