@@ -72,5 +72,10 @@
     "role_paths": [
             "roles/cis"
       ]
-  }]
+  },
+      "type": "shell",
+  "script": "centos7_audit.sh",
+  "pause_before": "10s"
+}            
+ ]
 }
